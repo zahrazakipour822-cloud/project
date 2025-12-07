@@ -17,8 +17,7 @@ while True:
     elif choice_menu == "report":
         (coffee.report())
         (money.report())
-    # coin = money.process_coins()
-    # print(f"Here is ${coin}")
+   
     else:
         drink = menu.find_drink(choice_menu)
         if coffee.is_resource_sufficient(drink)and money.make_payment(drink.cost):
